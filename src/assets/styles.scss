@@ -71,8 +71,8 @@ body {
 // Navigation
 .main-nav {
   display: flex;
-  background-color: #181818;
-  color: #fff;
+  background-color: #0a0a0a;
+  color: #f3f3f3;
   height: 65px;
   font-size: 20px;
   font-family: "Blakee", serif;
@@ -98,14 +98,14 @@ body {
     text-align: center;
     padding: 0 25px;
     display: inline-block;
+    transition: ease-in-out 0.2s;
     &:hover{
-      background-color: #fff;
-      color: #181818;
-      transition: 0.5s;
+      background-color: #f0efef;
+      color: #0a0a0a;
     }
     &:active {
-      background-color: #fff;
-      color: #181818;
+      background-color: #f3f3f3;
+      color: #0a0a0a;
     }
   }
 }
