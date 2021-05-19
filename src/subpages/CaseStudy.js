@@ -17,7 +17,7 @@ export default function CaseStudy() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[slug.current == "${slug}"]{
+        `*[slug.current == '${slug}']{
       title,
       _id,
       slug,
@@ -50,8 +50,8 @@ export default function CaseStudy() {
                   src={urlFor(caseStudy.authorImage).url()}
                   alt={caseStudy.name}
                 />
+                <p>{caseStudy.name}</p>
               </div>
-              <p>{caseStudy.name}</p>
             </div>
           </div>
           <img src={caseStudy.mainImage.asset.url} alt={caseStudy.title} />

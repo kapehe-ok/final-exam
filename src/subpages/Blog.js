@@ -6,6 +6,12 @@ import "../assets/styles.scss";
 export default function Portfolio() {
   const [postData, setPost] = useState(null);
 
+  const [didMount, setDidMount] = useState(false);
+  useEffect(() => {
+    setDidMount(true);
+    return () => setDidMount(false);
+  }, []);
+
   useEffect(() => {
     sanityClient
       .fetch(
@@ -25,6 +31,10 @@ export default function Portfolio() {
       .catch(console.error);
   });
 
+  if (!didMount) {
+    return null;
+  }
+
   return (
     <main>
       <h1>Test</h1>
@@ -32,9 +42,9 @@ export default function Portfolio() {
       <div className="portfolio-box">
         {postData &&
           postData.map((post, index) => (
-            <section>
+            <section key={post.slug.current}>
               <Link
-                to={"/BlogPost" + post.slug.current}
+                to={"/BlogPost/" + post.slug.current}
                 key={post.slug.current}
               >
                 <span key={index}>
