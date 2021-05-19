@@ -39,7 +39,7 @@
   font-weight: 400;
   font-style: normal;
 }
-*{
+* {
   margin: 0;
   padding: 0;
 
@@ -66,16 +66,19 @@ body {
   text-decoration: none;
   text-transform: none;
 }
-nav{
+
+// Navigation
+.main-nav {
   background-color: #181818;
   color: #fff;
   height: 65px;
   font-size: 20px;
-  font-family:"Blakee",serif;
+  font-family: "Blakee", serif;
   font-weight: 400;
-  a{
+  // &__list {
+  // }
+  &__item {
     text-decoration: none;
     color: #fff;
-    
   }
 }

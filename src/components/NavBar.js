@@ -5,14 +5,24 @@ import "../assets/styles.scss";
 export default function NavBar() {
   return (
     <header>
-      <nav>
-        <NavLink to="/" exact>
-          Home
-        </NavLink>
-        <NavLink to="/Portfolio">Portfolio</NavLink>
-        <NavLink to="/About">About us</NavLink>
-        <NavLink to="/Contact">Contact</NavLink>
-        <NavLink to="/Blog">Blog</NavLink>
+      <nav class="main-nav">
+        <div class="main-nav__list">
+          <NavLink class="main-nav__item" to="/" exact>
+            Home
+          </NavLink>
+          <NavLink class="main-nav__item" to="/Portfolio">
+            Portfolio
+          </NavLink>
+          <NavLink class="main-nav__item" to="/About">
+            About us
+          </NavLink>
+          <NavLink class="main-nav__item" to="/Contact">
+            Contact
+          </NavLink>
+          <NavLink class="main-nav__item" to="/Blog">
+            Blog
+          </NavLink>
+        </div>
       </nav>
     </header>
   );
