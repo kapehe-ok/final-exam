@@ -31,19 +31,19 @@ export default function Portfolio() {
       <h2>Welcome test!</h2>
       <div className="portfolio-box">
         {postData &&
-          postData.map((post, index) => (
+          postData.map((projects, index) => (
             <section>
               <Link
-                to={"/CaseStudy" + post.slug.current}
-                key={post.slug.current}
+                to={"/CaseStudy/" + projects.slug.current}
+                key={projects.slug.current}
               >
                 <span key={index}>
                   <img
-                    src={post.mainImage.asset.url}
-                    alt={post.mainImage.alt}
+                    src={projects.mainImage.asset.url}
+                    alt={projects.mainImage.alt}
                   />
                 </span>
-                <h3>{post.title}</h3>
+                <h3>{projects.title}</h3>
               </Link>
             </section>
           ))}
