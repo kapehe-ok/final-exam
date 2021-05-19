@@ -73,7 +73,7 @@ export default function NavBar() {
             Contact
           </NavLink>
           <NavLink className="main-nav__item" to="/Blog">
-            Blog
+            Our blog
           </NavLink>
         </div>
       </nav>
