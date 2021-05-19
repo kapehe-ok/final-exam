@@ -97,9 +97,15 @@ body {
     line-height: 65px;
     text-align: center;
     padding: 0 25px;
-    :active {
-      text-decoration: none;
-      color: #fff;
+    display: inline-block;
+    &:hover{
+      background-color: #fff;
+      color: #181818;
+      transition: 0.5s;
+    }
+    &:active {
+      background-color: #fff;
+      color: #181818;
     }
   }
 }
