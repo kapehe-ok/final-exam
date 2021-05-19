@@ -9,7 +9,7 @@ export default function Portfolio() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "post"] {
+        `*[_type == "projects"] {
             title,
             slug,
             mainImage{
