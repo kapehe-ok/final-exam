@@ -6,6 +6,12 @@ import "../assets/styles.scss";
 export default function Portfolio() {
   const [postData, setPost] = useState(null);
 
+  const [didMount, setDidMount] = useState(false);
+  useEffect(() => {
+    setDidMount(true);
+    return () => setDidMount(false);
+  }, []);
+
   useEffect(() => {
     sanityClient
       .fetch(
@@ -24,6 +30,10 @@ export default function Portfolio() {
       .then((data) => setPost(data))
       .catch(console.error);
   });
+
+  if (!didMount) {
+    return null;
+  }
 
   return (
     <main>
