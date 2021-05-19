@@ -29,7 +29,7 @@ export default function Portfolio() {
     <main>
       <h1>Test</h1>
       <h2>Welcome test!</h2>
-      <div>
+      <div className="portfolio-box">
         {postData &&
           postData.map((post, index) => (
             <section>
