@@ -1,4 +1,4 @@
-import sanityClient from "@sanity/client";
+import sanityClient from "../client.js";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../assets/styles.scss";
@@ -34,7 +34,7 @@ export default function Portfolio() {
           postData.map((post, index) => (
             <section>
               <Link
-                to={"/Portfolio" + post.slug.current}
+                to={"/CaseStudy" + post.slug.current}
                 key={post.slug.current}
               >
                 <span key={index}>
