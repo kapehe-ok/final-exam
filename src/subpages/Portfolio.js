@@ -42,7 +42,7 @@ export default function Portfolio() {
       <div className="portfolio-box">
         {postData &&
           postData.map((projects, index) => (
-            <section>
+            <section key={projects.slug.current}>
               <Link
                 to={"/CaseStudy/" + projects.slug.current}
                 key={projects.slug.current}
