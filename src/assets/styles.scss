@@ -1,53 +1,54 @@
 @font-face {
   font-family: "Autumnne";
-  src: url("./fonts/Autumnne-Bold.svg") format("svg");
+  src: url("./fonts/Autumnne-Bold.otf");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Autumnne";
-  src: url("./fonts/Autumnne-Regular.svg") format("svg");
+  src: url("./fonts/Autumnne-Regular.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Blakee";
-  src: url("./fonts/Blakee-Bold.svg") format("svg");
+  src: url("./fonts/Blakee-Bold.otf");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Blakee";
-  src: url("./fonts/Blakee-Light.svg") format("svg");
+  src: url("./fonts/Blakee-Light.otf");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Blakee";
-  src: url("./fonts/Blakee-Medium.svg") format("svg");
+  src: url("./fonts/Blakee-Medium.otf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Blakee";
-  src: url("./fonts/Blakee-Regular.svg") format("svg");
+  src: url("./fonts/Blakee-Regular.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 body {
   background-color: red;
-  font-family: "Autumnne" !important;
+  font-family: "Blakee" !important;
 }
 
 .portfolio-box {
   width: 250px;
   height: auto;
+  display: flex;
 }
 
 .portfolio-box img {
