@@ -69,16 +69,36 @@ body {
 
 // Navigation
 .main-nav {
+  display: flex;
   background-color: #181818;
   color: #fff;
   height: 65px;
   font-size: 20px;
   font-family: "Blakee", serif;
-  font-weight: 400;
-  // &__list {
-  // }
+  font-weight: 300;
+  justify-content: space-between;
+  box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.2); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  &__list {
+    height: 100%;
+    margin-right: 50px;
+  }
+  &__logo{
+    margin: 17.5px 35px 17.5px 70px ;
+  }
   &__item {
     text-decoration: none;
     color: #fff;
+    height: 100%;
+    line-height: 65px;
+    text-align: center;
+    padding: 0 25px;
+    :active {
+      text-decoration: none;
+      color: #fff;
+    }
   }
 }

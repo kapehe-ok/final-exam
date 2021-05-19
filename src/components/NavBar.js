@@ -7,8 +7,9 @@ export default function NavBar() {
     <header>
       <nav class="main-nav">
           <svg
-            width="275"
-            height="32"
+          className="main-nav__logo"
+            width="263.45"
+            height="30"
             viewBox="0 0 275 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
